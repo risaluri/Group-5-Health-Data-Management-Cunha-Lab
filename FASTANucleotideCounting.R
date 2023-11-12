@@ -1,1 +1,4 @@
-jkkj
+countNucleotides <- function() {
+  "skjd"
+}
+  
