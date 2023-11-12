@@ -1,0 +1,11 @@
+myseq = "AGCTTTTCATTCTGACTGCAACGGGCAATATGTCTCTGTGTGGATTAAAAAAAGAGTGTCTGATAGCAGC"
+
+# split it into a vector of individual characters:
+strsplit(myseq, "")[[1]]
+#  [1] "A" "G" "C" "T" "T" "T" "T" "C" "A" "T" "T" "C" "T" "G" "A" "C" "T" "G" "C" "A" "A" "C" "G" "G" "G" "C" "A" "A" "T" "A" "T" "G" "T" "C" "T" "C" "T" "G" "T"
+# [40] "G" "T" "G" "G" "A" "T" "T" "A" "A" "A" "A" "A" "A" "A" "G" "A" "G" "T" "G" "T" "C" "T" "G" "A" "T" "A" "G" "C" "A" "G" "C"
+
+# count the frequencies of each
+table(strsplit(myseq, "")[[1]])
+# A  C  G  T 
+# 20 12 17 21 
