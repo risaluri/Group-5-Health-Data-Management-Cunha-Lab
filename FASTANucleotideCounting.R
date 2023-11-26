@@ -9,7 +9,7 @@ count_nucleotides <- function(dna_sequence) {
   return(list(A = count_a, C = count_c, T = count_t, G = count_g))
 }
 
-read_fasta_file <- function(path_to_file) {
+read_fasta_file <- function(file_path) {
   fasta_content <- readLines(file_path)
   
   header <- character(0)
@@ -24,4 +24,6 @@ read_fasta_file <- function(path_to_file) {
     }
   }
   
+  #uses count_nucleotides function with fasta file. gets rid of any spaces in sequence variable
+  count_nucleotides(paste(sequence, collapse = ""))
 }
