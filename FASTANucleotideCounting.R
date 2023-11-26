@@ -1,3 +1,5 @@
+library(stringr)
+
 count_nucleotides <- function(dna_sequence) {
   dna_sequence <- toupper(dna_sequence) #convert everything to uppercase
   
@@ -27,3 +29,6 @@ read_fasta_file <- function(file_path) {
   #uses count_nucleotides function with fasta file. gets rid of any spaces in sequence variable
   count_nucleotides(paste(sequence, collapse = ""))
 }
+
+file_path = "C:/Users/aksit/Downloads/TP53_datasets (1)/ncbi_dataset/data/gene.fna"
+read_fasta_file(file_path)
