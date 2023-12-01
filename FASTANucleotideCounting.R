@@ -28,4 +28,5 @@ read_fasta_file <- function(file_path) {
   
   #uses count_nucleotides function with fasta file. gets rid of any spaces in sequence variable
   count_nucleotides(paste(sequence, collapse = ""))
-}
+} 
+#hello 
