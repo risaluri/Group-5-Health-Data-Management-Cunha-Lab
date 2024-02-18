@@ -1,6 +1,7 @@
 library(stringr)
 library(tools)
 #hi this is srimayi
+# hello
 count_nucleotides <- function(dna_sequence) {
   dna_sequence <- toupper(dna_sequence) #convert everything to uppercase
   
